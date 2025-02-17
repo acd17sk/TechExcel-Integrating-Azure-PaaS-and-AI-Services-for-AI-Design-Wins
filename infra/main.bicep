@@ -66,7 +66,11 @@ var deployments = [
       name: 'gpt-4o'
       version: '2024-05-13'
     }
-    capacity: 40
+    sku: {
+      capacity: 40
+      name: 'GlobalStandard'
+    }
+    
   }
   {
     name: 'text-embedding-ada-002'
