@@ -10,6 +10,7 @@ def get_hotels():
     response = requests.get(f"{api_endpoint}/Hotels", timeout=10)
     return response
 
+
 @st.cache_data
 def get_hotel_bookings(hotel_id):
     """Return a list of bookings for the specified hotel."""
